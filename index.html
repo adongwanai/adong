@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="阿东的个人网站，展示 Agent Memory、Agentic RAG、端边云产品落地、开源与科研经历。"
+    />
+    <title>阿东 · Agent 架构师</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到首页">阿东</a>
+      <nav class="nav" aria-label="页面导航">
+        <a href="#workflow">方法</a>
+        <a href="#projects">项目</a>
+        <a href="#capabilities">能力</a>
+        <a href="#papers">研究</a>
+        <a href="#timeline">经历</a>
+        <a href="#gallery">图库</a>
+        <a href="#contact">联系</a>
+        <a href="https://github.com/adongwanai/AgentGuide" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot"></span>
+            Agent Architect · Personal Website · 2026
+          </p>
+          <p class="hero-label">阿东</p>
+          <h1 id="hero-title">Agent Memory & Agentic RAG 架构师</h1>
+          <p class="hero-subtitle">把 Agent 从 Demo 做到产品、设备和业务闭环。</p>
+          <p class="hero-lede">
+            中科院自动化所硕士，现任 Lenovo Agent 架构师。主导 Claw / TinyClaw
+            自进化数字员工与端侧 Agent Runtime，长期关注 Agent Memory、Agentic RAG、评估体系和端边云交付。
+          </p>
+          <div class="hero-mantra" aria-label="个人理念">
+            <span>企业级 Agent：可回放、可评测、可复用、可交付。</span>
+            <span>开源项目 AgentGuide：5k+ GitHub Stars，服务 Agent 学习与工程实践。</span>
+            <span>研究方向聚焦长期记忆、证据控制和 Agent 技能治理。</span>
+          </div>
+          <div class="hero-actions" aria-label="主要链接">
+            <a class="button primary" href="#projects">查看项目案例</a>
+            <a class="button secondary" href="#papers">查看研究工作</a>
+            <a class="button secondary" href="#contact">公开链接</a>
+          </div>
+          <div class="social-proof" id="social-proof"></div>
+        </div>
+
+        <aside class="hero-panel" aria-label="关键数据与个人素材">
+          <div class="hero-collage">
+            <figure class="hero-feature hero-feature-main">
+              <img src="./assets/gallery/thumbs/adong-13.jpg" alt="阿东个人形象素材" />
+              <figcaption>阿东玩 AI · Builder / Architect / OPC</figcaption>
+            </figure>
+            <figure class="hero-feature">
+              <img src="./assets/gallery/thumbs/adong-03.jpg" alt="开源项目截图素材" />
+              <figcaption>Open Source</figcaption>
+            </figure>
+            <figure class="hero-feature">
+              <img src="./assets/gallery/thumbs/adong-09.jpg" alt="小红书影响力截图素材" />
+              <figcaption>AI Builder Network</figcaption>
+            </figure>
+          </div>
+          <div class="metric-grid" id="hero-metrics"></div>
+        </aside>
+      </section>
+
+      <section class="section workflow-section" id="workflow" aria-labelledby="workflow-title">
+        <div class="section-heading centered">
+          <p class="kicker">Working Method</p>
+          <h2 id="workflow-title">从问题定义到上线评估的 Agent 工程方法</h2>
+          <p class="section-intro">
+            这里记录的是一套稳定交付路径：先定义问题和指标，再做架构、实现、评估和产品化闭环。
+          </p>
+        </div>
+        <div class="workflow-grid" id="workflow-grid"></div>
+      </section>
+
+      <section class="section os-section" id="operating-system" aria-labelledby="os-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Architecture Practice</p>
+            <h2 id="os-title">Agent 系统架构：Memory + Runtime + Evaluation</h2>
+          </div>
+          <p class="section-intro">
+            我的项目通常围绕三件事展开：长期记忆如何不污染上下文，Runtime 如何稳定调用工具和模型，评估系统如何定位失败并推动修复。
+          </p>
+        </div>
+        <div class="os-layout">
+          <div class="os-board" aria-label="OpenClaw 架构示意">
+            <div class="os-header">
+              <span class="os-mark">Ω</span>
+              <div>
+                <h3>Enterprise Agent Architecture</h3>
+                <p>Memory / Runtime / Evaluation</p>
+              </div>
+            </div>
+            <div class="os-node primary-node">
+              <span>Memory</span>
+              <strong>Index / Fact / Procedure / Archive</strong>
+              <p>索引常驻、全文按需、多路召回，控制长会话上下文成本。</p>
+            </div>
+            <div class="os-node-row">
+              <div class="os-node">
+                <span>Runtime</span>
+                <strong>Tools / MCP / Multi-Agent</strong>
+                <p>隔离任务上下文，统一工具接口，支持端侧与云端协同。</p>
+              </div>
+              <div class="os-node">
+                <span>Evaluation</span>
+                <strong>Replay / Metrics / Attribution</strong>
+                <p>通过轨迹回放识别幻觉、循环、超时和 Skill 失效。</p>
+              </div>
+            </div>
+          </div>
+          <div class="os-copy">
+            <h3>我更关注 Agent 是否能长期稳定工作</h3>
+            <p>
+              企业场景里，Agent 的价值不在一次演示，而在是否能跨会话、跨工具、跨入口持续完成任务。
+              所以我的工作会把记忆、检索、工具调用、失败归因和 Skill 复用放在同一条链路里设计。
+            </p>
+            <ul>
+              <li><strong>上下文可控</strong><span>用分层记忆和按需加载降低上下文膨胀。</span></li>
+              <li><strong>经验可复用</strong><span>把成功/失败轨迹沉淀为 SOP、Skill 和可执行脚本。</span></li>
+              <li><strong>问题可定位</strong><span>用回放和指标归因把线上失败转成下一轮优化样本。</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Selected Projects</p>
+            <h2 id="projects-title">可以被追问的项目与成果</h2>
+          </div>
+          <p class="section-intro">
+            我把项目按问题、架构、行动和结果组织，保留能继续展开的技术细节和真实证据。
+          </p>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+      <section class="section capabilities" id="capabilities" aria-labelledby="capabilities-title">
+        <div class="section-heading">
+          <p class="kicker">What I Build</p>
+          <h2 id="capabilities-title">我长期打磨的四种能力</h2>
+        </div>
+        <div class="capability-grid" id="capability-grid"></div>
+      </section>
+
+      <section class="section proof-strip" aria-label="核心证明">
+        <div>
+          <p class="kicker">Core Thesis</p>
+          <h2>我关注可评测、可复用、可交付的 Agent 系统。</h2>
+        </div>
+        <p>
+          我的工作习惯是把复杂 Agent 问题拆成架构、记忆、检索、训练、评估、产品化六个层面：
+          先让系统可回放、可评测、可复用，再谈规模化交付。
+        </p>
+      </section>
+
+      <section class="section paper-section" id="papers" aria-labelledby="papers-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Research Evidence</p>
+            <h2 id="papers-title">最近一年研究工作</h2>
+          </div>
+          <p class="section-intro">
+            这里不做正式论文清单，只展示最近一年围绕 Agentic RAG、长期记忆和 Skill Governance 的公开可讲工作。
+          </p>
+        </div>
+        <div class="paper-grid" id="paper-grid"></div>
+      </section>
+
+      <section class="section timeline-section" id="timeline" aria-labelledby="timeline-title">
+        <div class="section-heading">
+          <p class="kicker">Career Narrative</p>
+          <h2 id="timeline-title">一条从工程、研究到产品落地的时间轴</h2>
+        </div>
+        <div class="filters" id="filters" role="tablist" aria-label="按类型筛选经历"></div>
+        <div class="timeline-shell">
+          <div class="timeline" id="timeline-list" aria-live="polite" tabindex="0"></div>
+          <span class="timeline-progress" id="timeline-progress-bar" aria-hidden="true"></span>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Visual Proof</p>
+          <h2 id="gallery-title">图片素材：开源、影响力、现场与项目回顾</h2>
+          </div>
+          <p class="section-intro">
+            公开可展示素材统一放在这里：开源数据、内容影响力、活动现场和项目回顾。点击图片先查看详情，再从弹窗打开公开链接或原图。
+          </p>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy">
+          <p class="kicker">Public Links</p>
+          <h2 id="contact-title">公开链接</h2>
+          <p>
+            这是我的个人网站，公开记录项目、研究、开源和内容素材。非公开联系方式不会放在这里。
+          </p>
+          <div class="contact-list">
+            <a href="https://github.com/adongwanai" target="_blank" rel="noreferrer">github.com/adongwanai</a>
+            <a href="https://adongwanai.github.io/" target="_blank" rel="noreferrer">adongwanai.github.io</a>
+            <a href="https://www.xiaohongshu.com/user/profile/5f310fd50000000001009df5" target="_blank" rel="noreferrer">小红书：阿东玩 AI</a>
+          </div>
+        </div>
+        <div class="contact-note">
+          <strong>隐私说明</strong>
+          <p>手机号和非公开联系方式不会出现在此页面，需要时走正式沟通渠道。</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>阿东 · Agent Memory · Agentic RAG · OPC Builder</p>
+      <div class="footer-links">
+        <a href="https://github.com/adongwanai/AgentGuide" target="_blank" rel="noreferrer">AgentGuide</a>
+        <a href="https://adongwanai.github.io/vibecoding/" target="_blank" rel="noreferrer">Vibe Coding</a>
+        <a href="https://clawcorp.top/" target="_blank" rel="noreferrer">ClawCorp</a>
+      </div>
+    </footer>
+
+    <div class="modal-backdrop" id="modal-backdrop" hidden></div>
+    <section
+      class="detail-modal"
+      id="detail-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      hidden
+    >
+      <button class="icon-button" id="modal-close" type="button" aria-label="关闭详情">×</button>
+      <div id="modal-content"></div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
