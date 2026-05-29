@@ -201,13 +201,6 @@ const gallerySections = [
         note: "开源仓库与项目说明",
       },
       {
-        src: "./assets/gallery/thumbs/web/project-clawcorp-landing-pddx.jpg",
-        full: "./assets/gallery/web/project-clawcorp-landing-pddx.png",
-        href: "https://landing-page-pddx.vercel.app/",
-        title: "ClawCorp Landing",
-        note: "公开产品落地页截图",
-      },
-      {
         src: "./assets/gallery/thumbs/web/project-clawcorp-slides.jpg",
         full: "./assets/gallery/web/project-clawcorp-slides.png",
         href: "https://ilnf.space/evocorp/slides.html",
@@ -289,12 +282,6 @@ const nodes = [
         src: "./assets/gallery/thumbs/web/project-clawcorp-site.jpg",
         full: "./assets/gallery/web/project-clawcorp-site.png",
         type: "项目截图",
-        caption: "ClawCorp 公开产品落地页截图。",
-      },
-      {
-        src: "./assets/gallery/thumbs/web/project-clawcorp-landing-pddx.jpg",
-        full: "./assets/gallery/web/project-clawcorp-landing-pddx.png",
-        type: "项目落地页",
         caption: "ClawCorp 公开产品落地页截图。",
       },
       {
