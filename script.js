@@ -4,6 +4,8 @@ const metrics = [
   { value: "80%+", label: "上下文压缩", note: "四层分层记忆架构" },
   { value: "90%", label: "Memory 命中率", note: "从 70% 提升至 90%" },
   { value: "3", label: "近一年研究", note: "Agent Memory / RAG / Skill" },
+  { value: "10+", label: "OPC 创新项目", note: "去年落地的 AI 产品实验" },
+  { value: "6+", label: "Vibe Coding 盈利项目", note: "已上线并产生收入" },
   { value: "3000万+", label: "内容播放量", note: "链接 3000+ AI Builder / Founder" },
 ];
 
@@ -25,8 +27,8 @@ const capabilities = [
   },
   {
     icon: "O",
-    title: "开源与社区影响力",
-    text: "发起 AgentGuide，建设学习路线、知识图谱和工程实践索引，同时以自媒体和 OPC 实验连接 AI Builder 生态。",
+    title: "OPC 与 Vibe Coding",
+    text: "去年落地 OPC 创新项目 10+，Vibe Coding 已上线盈利项目 6+，能把 idea 快速变成页面、工具、内容和可验证产品。",
   },
 ];
 
@@ -93,11 +95,11 @@ const projects = [
   },
   {
     icon: "OP",
-    title: "OPC / 内容影响力",
-    metric: "3000万+播放",
-    desc: "围绕 AI Agent、Vibe Coding 和技术内容连接开发者、Founder 与产品实践场景。",
-    proof: "证明你能把技术能力转化为外部影响力和行业连接。",
-    tags: ["Content", "Community", "AI Builder"],
+    title: "OPC / Vibe Coding",
+    metric: "10+ / 6+",
+    desc: "去年落地 OPC 创新项目 10+，Vibe Coding 已上线盈利项目 6+，用 AI 跑通从 idea 到产品验证的闭环。",
+    proof: "证明你能把技术能力转化为产品、增长、内容和真实收入。",
+    tags: ["OPC", "Vibe Coding", "AI Builder"],
     href: "#gallery",
   },
 ];
@@ -568,7 +570,8 @@ const nodes = [
     metrics: [
       ["3000万+", "全网播放量"],
       ["3000+", "AI Builder / Founder"],
-      ["万粉", "科技博主"],
+      ["10+", "OPC 创新项目"],
+      ["6+", "Vibe Coding 盈利项目"],
     ],
     keywords: ["OPC", "AI 出海", "Marketing", "Builder"],
     images: [
@@ -577,15 +580,17 @@ const nodes = [
       { src: "./assets/gallery/thumbs/adong-13.jpg", full: "./assets/gallery/adong-13.jpg", type: "公众号", caption: "微信公众号深度内容入口。" },
     ],
     detail: {
-      background: "AI 技术落地不只发生在公司内部，也发生在个人影响力、内容分发、社区和产品验证链路中。",
-      task: "把自媒体、开源、社区和产品实践变成可复用的 AI Builder 方法论。",
+      background: "AI 技术落地不只发生在公司内部，也发生在个人影响力、内容分发、社区、出海和产品验证链路中。",
+      task: "把自媒体、开源、社区、Vibe Coding 和 OPC 产品实践变成可复用的 AI Builder 方法论。",
       action: [
         "持续发布大模型、Agent、Vibe Coding、开源和产品实践相关内容。",
+        "去年落地 OPC 创新项目 10+，用 AI 跑通内容、页面、工具、分发和反馈闭环。",
+        "Vibe Coding 已上线盈利项目 6+，把 idea 快速推进到可访问、可使用、可收费的产品形态。",
         "连接 AI Builder、Founder 与产品实践场景，形成项目、合作和用户反馈网络。",
-        "把个人主页、开源项目、课程介绍、社区和 offer 墙串成完整增长路径。",
+        "把个人主页、开源项目、课程介绍、社区和产品案例串成完整增长路径。",
       ],
-      result: "全网播放量 3000万+，已链接 3000+ AI Builder / Founder，并与阿里、字节、腾讯、百度、Kimi 等生态产生合作连接。",
-      talk: "可以展开：技术人如何做分发；开源、内容和产品如何互相增强。",
+      result: "全网播放量 3000万+，已链接 3000+ AI Builder / Founder；去年落地 OPC 创新项目 10+，Vibe Coding 已上线盈利项目 6+。",
+      talk: "可以展开：技术人如何做分发；Vibe Coding 如何缩短产品验证周期；开源、内容和产品如何互相增强。",
     },
     links: [
       ["个人主页", "https://adongwanai.github.io/"],
